@@ -12,5 +12,9 @@ docker build -t lcarnevale/noip2 .
 
 Run the docker container with environment variables:
 ```bash
-docker run -d --name noip2 -e USERNAME=<username> -e PASSWORD=<password> -e INTERVAL=<interval> lcarnevale/noip2
+docker run -d --name noip2 \
+  -e USERNAME=<username> \
+  -e PASSWORD=<password> \
+  -e INTERVAL=<interval> \
+  lcarnevale/noip2
 ```
